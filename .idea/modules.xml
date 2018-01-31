@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://D:\PycharmProjects\spider\.idea\spider.iml" filepath="D:\PycharmProjects\spider\.idea\spider.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/weixin-learn.iml" filepath="$PROJECT_DIR$/.idea/weixin-learn.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/wechat-robots.iml" filepath="$PROJECT_DIR$/.idea/wechat-robots.iml" />
+>>>>>>> aeac6776bfc96f2240bac32851ac66b97dd25b90
     </modules>
   </component>
 </project>

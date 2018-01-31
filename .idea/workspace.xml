@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="096cfdff-3be1-4b1e-b17c-d022eaa01ada" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+=======
+>>>>>>> aeac6776bfc96f2240bac32851ac66b97dd25b90
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="weixin-learn" />
@@ -233,10 +237,15 @@
         <item index="0" class="java.lang.String" itemvalue="Python.weixin" />
       </list>
     </recent_temporary>
+=======
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+>>>>>>> aeac6776bfc96f2240bac32851ac66b97dd25b90
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+<<<<<<< HEAD
   <component name="SvnConfiguration">
     <configuration>C:\Users\skyy-\AppData\Roaming\Subversion</configuration>
   </component>
@@ -274,6 +283,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+=======
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1517296184273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517296184273</updated>
+    </task>
+    <servers />
+  </component>
+>>>>>>> aeac6776bfc96f2240bac32851ac66b97dd25b90
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -281,6 +301,7 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/weixin-robot.py" />
     <entry file="file://$PROJECT_DIR$/templates/index.html" />
@@ -321,4 +342,6 @@
       </state>
     </states>
   </component>
+=======
+>>>>>>> aeac6776bfc96f2240bac32851ac66b97dd25b90
 </project>
