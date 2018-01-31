@@ -12,15 +12,17 @@ from json import loads
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/weixin', methods=['GET', 'POST'])
 def wechat():
+    # 接收和返回GET请求，与微信服务器建立连接
     if request.method == 'GET':
         echostr = request.args.get('echostr')
         return echostr
     else:
         data = request.get_data()
+        # 用xml.etree模块解析XML类型数据
         xml = ET.fromstring(data)
-        ToUserName = xml.findtext('.//ToUserName')
+        ToUserName = xml.findtext('.//ToUserName')  # 也可以写成xml.find('ToUserName').text
         FromUserName = xml.findtext('.//FromUserName')
         CreateTime = xml.findtext('.//CreateTime')
         MsgType = xml.findtext('.//MsgType')
@@ -28,18 +30,19 @@ def wechat():
         MsgId = xml.findtext('.//MsgId')
         if u'你是谁' in Content:
             return render_template(
-                'sendmsg.html',
+                'reply_text.html',
                 ToUserName=ToUserName,
                 FromUserName=FromUserName,
                 CreateTime=CreateTime,
                 MsgType=MsgType,
-                Content=u'我是你的朋友瘦子君啊', )
-        html = urlopen('http://op.juhe.cn/robot/index?info=%s&key=ab335a381ee61e8e95e2b5a32c364d66'
-                       % Content.encode('utf-8')).read()
-        result = loads(html)
+                Content=u'我是你的朋友瘦子君啊^@^', )
+        session = urlopen('http://op.juhe.cn/robot/index?info=%s&key=ab335a381ee61e8e95e2b5a32c364d66'
+                        % Content.encode('utf-8')).read()
+        # 处理聚合接口调用返回的json格式数据，将json转换为字典数据
+        result = loads(session)
         Content = result['result']['text']
         return render_template(
-                'index.html',
+                'reply_text.html',
                 ToUserName=ToUserName,
                 FromUserName=FromUserName,
                 CreateTime=CreateTime,
@@ -48,4 +51,4 @@ def wechat():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

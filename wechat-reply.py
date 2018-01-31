@@ -25,7 +25,7 @@ def wechat():
         Content = xml.findtext('.//Content')
         MsgId = xml.findtext('.//MsgId')
         return render_template(
-            'sedmsg.html',
+            'reply_text.html',
             ToUserName=ToUserName,
             FromUserName=FromUserName,
             CreateTime=CreateTime,
